@@ -3,9 +3,41 @@ import Chore from './Chore';
 
 const ChorePage = () => {
   return (
-    <div>
-      <h1>ChorePage.js</h1>
-      <Chore />
+    <div class='container'>
+      <div class='columns'>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+      </div>
+      <div class='columns'>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+        <div class='column'>
+          <Chore />
+        </div>
+      </div>
     </div>
   );
 };
