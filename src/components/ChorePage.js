@@ -14,20 +14,8 @@ const ChorePage = () => {
         <div class='column'>
           <Chore />
         </div>
-        <div class='column'>
-          <Chore />
-        </div>
-        <div class='column'>
-          <Chore />
-        </div>
       </div>
       <div class='columns'>
-        <div class='column'>
-          <Chore />
-        </div>
-        <div class='column'>
-          <Chore />
-        </div>
         <div class='column'>
           <Chore />
         </div>
