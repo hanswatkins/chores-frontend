@@ -1,30 +1,26 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
 import '../scripts/script';
-import { Link, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import SignUp from './SignUp';
-import LogIn from './LogIn';
-import ChorePage from './ChorePage';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <div>
-      <nav class='navbar' role='navigation' aria-label='main navigation'>
-        <div class='navbar-brand'>
+      <nav className='navbar' role='navigation' aria-label='main navigation'>
+        <div className='navbar-brand'>
           <Link to='/'>
-            <a class='navbar-item' href='https://bulma.io'>
+            <div className='navbar-item' href='https://bulma.io'>
               <img
                 src='https://bulma.io/images/bulma-logo.png'
                 width='112'
                 height='28'
                 alt=''
               />
-            </a>
+            </div>
           </Link>
-          <a
+          <div
             role='button'
-            class='navbar-burger'
+            className='navbar-burger'
             aria-label='menu'
             aria-expanded='false'
             data-target='navbarBasicExample'
@@ -32,39 +28,33 @@ const NavBar = () => {
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
-          </a>
+          </div>
         </div>
-        <div id='navbarBasicExample' class='navbar-menu'>
-          <div class='navbar-start'>
+        <div id='navbarBasicExample' className='navbar-menu'>
+          <div className='navbar-start'>
             <Link to='/'>
-              <a class='navbar-item'>Home</a>
+              <div className='navbar-item'>Home</div>
             </Link>
             <Link to='/chores/list'>
-              <a class='navbar-item'>Chores</a>
+              <div className='navbar-item'>Chores</div>
             </Link>
           </div>
-          <div class='navbar-end'>
-            <div class='navbar-item'>
-              <div class='buttons'>
+          <div className='navbar-end'>
+            <div className='navbar-item'>
+              <div className='buttons'>
                 <Link to='/sign-up'>
-                  <a class='button is-primary'>
+                  <div className='button is-primary'>
                     <strong>Sign up</strong>
-                  </a>
+                  </div>
                 </Link>
                 <Link to='/log-in'>
-                  <a class='button is-light'>Log in</a>
+                  <div className='button is-light'>Log in</div>
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/chores/list' element={<ChorePage />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/log-in' element={<LogIn />} />
-      </Routes>
     </div>
   );
 };
